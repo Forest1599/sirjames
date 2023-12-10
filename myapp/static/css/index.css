@@ -1,14 +1,9 @@
 .carousel-image {
-    filter: blur(3px);
-    min-width: 900px;
-    /* min-height: 500px; */
-    max-height: 800px;
-
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
-
+  filter: blur(3px);
+  min-height: 400px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .bullet-points {
