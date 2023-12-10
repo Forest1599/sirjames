@@ -13,25 +13,25 @@
 
 <body>
     <div class="container-fluid mini-header p-1">
-        <div class="container d-flex">
+        <div class="container d-flex align-items-center text-center text-sm-start">
             <div class="flex-grow-1">
-                <ul class="list-group list-group-horizontal">
-                    <li><i class="fa-solid fa-envelope social-media-icon m-2"></i>sirjameslocks@hotmail.com</li>
-                    <li><i class="fa-solid fa-phone social-media-icon m-2"></i>+447512 351941</li>
-                    <li><i class="fa-solid fa-map-pin social-media-icon m-2"></i>North West</li>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li><i class="fa-solid fa-envelope social-media-icon m-1 m-sm-2"></i>sirjameslocks@hotmail.com</li>
+                    <li><i class="fa-solid fa-map-pin social-media-icon m-1 m-sm-2"></i>North West</li>
+                    <li><i class="fa-solid fa-phone social-media-icon m-1 m-sm-2"></i>+447512 351941</li>
                 </ul>
             </div>
             
             <div>
                 <ul class="list-group list-group-horizontal">
-                    <li>
+                    <li class="d-none d-sm-block">
                         <a href="https://www.facebook.com/sirjameslocks"><i class="fa-brands fa-facebook mini-header-icon
-                             header-social-icon m-2 d-none d-sm-block social-media-icon clickable-social-media-icon"></i></a>
+                             header-social-icon m-2 social-media-icon clickable-social-media-icon"></i></a>
                     </li>
-                    <li>
+                    <li class="d-none d-sm-block">
                         <a href="">
                             <i class="fa-brands fa-instagram mini-header-icon
-                             header-social-icon m-2 d-none d-sm-block social-media-icon clickable-social-media-icon"></i>
+                             header-social-icon m-2 social-media-icon clickable-social-media-icon"></i>
                         </a>
                     </li>
                 </ul>
@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container navbar-items">
             <a class="navbar-brand text-center" href="{% url 'home' %}">
-                <img src="{% static 'imgs/logo.png' %}" alt="logo" class="d-inline-block align-text-top" width="70">
+                <img src="{% static 'imgs/logo.png' %}" alt="logo" class="d-inline-block align-text-top logo-img" width="70">
                 <p class="p-1 logo-text">Sir James Locks</p>
             </a>
             
@@ -138,8 +138,15 @@
         </section>
 
         <div class="text-center p-4 copyright-container">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">WEBSITE NAME</a>
+            <div class="row">
+                <div class="col-6">
+                    <p>© 2023 Copyright - <span class="fw-bold">Sir James Locks</span></p>
+                </div>
+                <div class="col-6">
+                    Made by Eriks Benne
+                </div>
+            </div>
+
         </div>
     </footer>
     

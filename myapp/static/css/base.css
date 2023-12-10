@@ -144,46 +144,15 @@ body {
 	.nav-item {
 		margin: 0 !important;
 	}
+
   }
 
-  @media only screen and (min-width: 767px) {
-	body {
-		font-size: 16px;
+@media (max-width: 991px) {
+	.logo-img {
+		width: 50px;
 	}
 
-	/* Mini-header styles */
-	.mini-header li {
-		font-size: 14px;
-	}
-
-	/* Navbar styles */
-	.navbar-brand {
-		font-size: 20px;
-	}
-
-	.navbar-nav .nav-link {
-		font-size: 18px;
-	}
-
-	/* Main content styles */
-	main {
-		padding: 20px;
-	}
-
-	/* Footer styles */
-	footer {
-		font-size: 14px;
-	}
-
-	.footer-social-media-icon {
-		font-size: 24px;
-	}
-
-	.footer-social-container p {
-		font-size: 14px;
-	}
-
-	.footer-social-container h6 {
-		font-size: 16px;
+	.logo-text {
+		font-size: 15px;
 	}
 }

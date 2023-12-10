@@ -113,30 +113,30 @@
 </div>
 
 <div class="container mt-5 mb-5">
-    <div class="d-grid">
-        <div class="row">
-            <div class="col lh-base">
-                <h2 class="display-2">About Us</h2>
-                <div class="mt-3">
-                    <p>Domestic services:
-                        We offer a 24 hour service to both homeowners & businesses in the North West of England. Our locksmiths are available for non-emergency and emergency appointments such as broken locks, lost keys, lock upgrades, burglary repairs,  security checks, UPVC door lock repairs and any other general home & business security advice you may require. Whether you would like to to schedule and appointment for a later date or if you’re in need of an emergency locksmith we offer flexible prices for great quality services. We offer a wide variety of products and a selection of security levels to suit all of our customers needs and budgets. 
-                    </p>
-                    <br>
-                    <p>reiciendis aliquam eum dignissimos cum. Soluta, rerum harum? Eveniet enim omnis libero est?</p>
-                </div>
-            </div>
-            <div class="col text-center">
-                <img src="{% static 'imgs/info.jpg' %}" alt="James Mabote" class="w-75 shadow border">
-            </div>
-
-            <div class="row lh-base">
-                <div class="text-center mt-5 areas-container mx-auto">
-                    <p>Areas covered</p>
-                    <p class="text-muted areas-covered-text mt-2">BOLTON, BURY, SALFORD, MIDDLETON, PRESTWICH, CHADDERTON, EGERTON, WORSLEY, HORWICH, DARWEN, BACUP, RAWTENSTALL, ACCRINGTON,
-                            ROCHDALE, BURNLEY, BLACKBURN, OLDHAM, MANCHESTER, BURNLEY, LANCASHIRE, CHORLEY, NELSON, COLNE, CLITHEROE, RAMSBOTTOM, ROSSENDALE</p>
-                </div>
+    <div class="row align-items-center">
+        <div class="col-lg-6 lh-base text-md-start">
+            <h2 class="display-2">About Us</h2>
+            <div class="mt-3">
+                <p class="about-text"><span class="about-header h5 fw-bold text-danger">Domestic Services -</span>
+                    We provide 24/7 locksmith services for homes and businesses in the North West. Our locksmiths handle non-emergency and emergency situations, including broken locks, lost keys, upgrades, burglary repairs, security checks, UPVC door lock fixes, and general security advice. Flexible pricing, quality services, and a range of products ensure we meet your needs and budget.
+                </p>
+                <br>
+                <p class="about-text"><span class="about-header h5 fw-bold text-danger">Automotive Services -</span>
+                    Our professional car locksmiths are available anytime to assist with various automotive issues. We serve up to 90% of car brands, offering key replacements, programming, and emergency entry services. Trust Sir James Locks for prompt and reliable automotive locksmith solutions.
+                </p>
             </div>
         </div>
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+            <img src="{% static 'imgs/info.jpg' %}" alt="James Mabote" class="w-75 shadow border">
+        </div>
+    </div>
+</div>
+
+<div class="lh-base mb-4">
+    <div class="text-center mt-5 areas-container mx-auto">
+        <p>Areas covered</p>
+        <p class="text-muted areas-covered-text mt-2">BOLTON, BURY, SALFORD, MIDDLETON, PRESTWICH, CHADDERTON, EGERTON, WORSLEY, HORWICH, DARWEN, BACUP, RAWTENSTALL, ACCRINGTON,
+                ROCHDALE, BURNLEY, BLACKBURN, OLDHAM, MANCHESTER, BURNLEY, LANCASHIRE, CHORLEY, NELSON, COLNE, CLITHEROE, RAMSBOTTOM, ROSSENDALE</p>
     </div>
 </div>
 
@@ -145,8 +145,8 @@
     <div class="map-container mx-auto shadow">
         <div id="map"></div>
     </div>
-    
 </div>
+
 {% endblock %}
 
 {% block scripts %} <script src="{% static 'js/mapping.js' %}"></script> {% endblock %}

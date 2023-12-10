@@ -70,6 +70,11 @@
     color: red;
 }
 
+.about-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
 .areas-covered-text {
   font-size: 12px;
 }
@@ -115,14 +120,10 @@
 }
 
 .map-container {
-  /* margin: auto; */
   max-width: 1000px;
 }
 
 @media (max-width: 768px) {
-  /* .carousel-content-text {
-    font-size: 25px;
-  } */
 
   .btn {
       font-size: 15px;
@@ -130,6 +131,16 @@
 
   .bulletpoint-title {
       font-size: 18px;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  .about-text {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
   }
 }
 
