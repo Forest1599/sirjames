@@ -6,6 +6,9 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description" content="Sir James Locks - Your Reliable Security Companion for All Locksmith Solutions!">
+    <meta name="keywords" content="locksmith, security, North West, locksmith services,
+     reliable locksmith, locksmith near me, locksmith near me for car, locksmith near me for house, locksmith near me prices">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block css %} {% endblock %}
     <title>{% block title %}Home{% endblock %}</title>
@@ -18,7 +21,7 @@
                 <ul class="list-group list-group-horizontal-sm">
                     <li><i class="fa-solid fa-envelope social-media-icon m-1 m-sm-2"></i>sirjameslocks@hotmail.com</li>
                     <li><i class="fa-solid fa-map-pin social-media-icon m-1 m-sm-2"></i>North West</li>
-                    <li><i class="fa-solid fa-phone social-media-icon m-1 m-sm-2"></i>+447512 351941</li>
+                    <li><i class="fa-solid fa-phone social-media-icon m-1 m-sm-2"></i>07512 351941</li>
                 </ul>
             </div>
             
@@ -54,12 +57,12 @@
                     <li class="nav-item ms-5">
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item ms-5">
+                    <!-- <li class="nav-item ms-5">
                         <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item ms-5">
                         <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                    </li> -->
                     <li class="d-block d-lg-none nav-item ms-5">
                         <a class="nav-link" href="{% url 'contact' %}">Contact Me</a>
                     </li>
@@ -128,7 +131,7 @@
                     <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
                     <p><i class="fas fa-home me-3 social-media-icon"></i>North West</p>
                     <p class="mt-1"><i class="fas fa-envelope me-3 social-media-icon"></i>sirjameslocks@hotmail.com</p>
-                    <p class="mt-1"><i class="fas fa-phone me-3 social-media-icon"></i>+447512 351941</p>
+                    <p class="mt-1"><i class="fas fa-phone me-3 social-media-icon"></i>07512 351941</p>
                     <p class="mt-1"><a href="{% url 'contact' %}" class="nav-link"><i class="fa-solid fa-align-left me-3 social-media-icon"></i>Contact Form</a></p>
                 </div>
             </div>

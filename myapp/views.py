@@ -9,8 +9,24 @@ from .forms import ContactForm
  
 def contact(request):
     if request.method == "POST":
-         handlePost(request)
-         return HttpResponseRedirect(request.path_info + '?success=true')
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+            try:
+                success = handlePost(request)
+
+                if(success):
+                    messages.success(request, 'Your email has been sent successfully!')
+                else:
+                    messages.error(request, 'Failed to process the form. Please try again..')
+            
+            except Exception as e:
+                messages.error(request, f'An error has occured, please try again..')
+        else:
+            messages.error(request, 'Form failed to validate, please try again..')
+
+
+            return HttpResponseRedirect(request.path_info)
 
     return render(request, "contact.html")
 
@@ -56,8 +72,8 @@ def handlePost(request):
     mailSent = send_mail(
         "SirJamesLocks email from website " + name,
         message,
-        settings.EMAIL_HOST_USER,
-        [email],
+        email,
+        [settings.EMAIL_HOST_USER,],
         html_message=email_body,
         fail_silently=False
     )
