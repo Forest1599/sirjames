@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Sir james locks - {% block title %}home{% endblock %}</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     {% load static %}
@@ -9,14 +10,14 @@
     <meta name="description" content="Sir James Locks - Your Reliable Security Companion for All Locksmith Solutions!">
     <meta name="keywords" content="locksmith, security, North West, locksmith services,
      reliable locksmith, locksmith near me, locksmith near me for car, locksmith near me for house, locksmith near me prices">
-    <meta name="google-site-verification" content="AVSFofjCuBbE5RqyOf3Z9BMga_7xuaEMvDDRfLBv1LM" />
-    <meta content="width=device-width, initial-scale=1.0">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Sirjames Locks - Your Reliable Security Companion">
     <meta property="og:description" content="Providing locksmith services in North West. Reliable locksmith near you for car and house. Affordable prices.">
+    <meta property="og:image" content="{% static 'imgs/google-snippet-img.jpeg' %}">
 
     {% block css %} {% endblock %}
-    <title>Sirjames locks - {% block title %}home{% endblock %}</title>
+    
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <div class="container d-flex align-items-center text-center text-sm-start">
             <div class="flex-grow-1">
                 <ul class="list-group list-group-horizontal-sm">
-                    <li><i class="fa-solid fa-envelope social-media-icon m-1 m-sm-2"></i>sirjameslocks@hotmail.com</li>
+                    <li><i class="fa-solid fa-envelope social-media-icon m-1 m-sm-2"></i>sirjames-locks@hotmail.com</li>
                     <li><i class="fa-solid fa-map-pin social-media-icon m-1 m-sm-2"></i>North West</li>
                     <li><i class="fa-solid fa-phone social-media-icon m-1 m-sm-2"></i>07512 351941</li>
                 </ul>
@@ -114,34 +115,35 @@
             </div>
         </section>
 
-        <section class="">
+        <div>
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-2">
-                        <i class="fas fa-gem me-3 social-media-icon"></i>Sir James Locks
-                    </h6>
-                    <p>
-                        Your Reliable Security Companion for All Locksmith Solutions!
-                    </p>
-                </div>
-        
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
-                    <h6 class="text-uppercase fw-bold mb-2">Links</h6>
-                    <p><a href="" class="nav-link">Home</a></p>
-                    <p class="mt-1"><a class="nav-link" href="{% url 'home' %}#about" onclick="scrollToSection('about')">About</a></p>
-                    <p class="mt-1"><a href="{% url 'contact' %}" class="nav-link">Contact Me</a></p>
-                </div>
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-2">
+                            <i class="fas fa-gem me-3 social-media-icon"></i>Sir James Locks
+                        </h6>
+                        <p>
+                            Your Reliable Security Companion for All Locksmith Solutions!
+                        </p>
+                    </div>
+            
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                        <h6 class="text-uppercase fw-bold mb-2">Links</h6>
+                        <p><a href="" class="nav-link">Home</a></p>
+                        <p class="mt-1"><a class="nav-link" href="{% url 'home' %}#about" onclick="scrollToSection('about')">About</a></p>
+                        <p class="mt-1"><a href="{% url 'contact' %}" class="nav-link">Contact Me</a></p>
+                    </div>
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
-                    <p><i class="fas fa-home me-3 social-media-icon"></i>North West</p>
-                    <p class="mt-1"><i class="fas fa-envelope me-3 social-media-icon"></i>sirjameslocks@hotmail.com</p>
-                    <p class="mt-1"><i class="fas fa-phone me-3 social-media-icon"></i>07512 351941</p>
-                    <p class="mt-1"><a href="{% url 'contact' %}" class="nav-link"><i class="fa-solid fa-align-left me-3 social-media-icon"></i>Contact Form</a></p>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
+                        <p><i class="fas fa-home me-3 social-media-icon"></i>North West</p>
+                        <p class="mt-1"><i class="fas fa-envelope me-3 social-media-icon"></i>sirjameslocks@hotmail.com</p>
+                        <p class="mt-1"><i class="fas fa-phone me-3 social-media-icon"></i>07512 351941</p>
+                        <p class="mt-1"><a href="{% url 'contact' %}" class="nav-link"><i class="fa-solid fa-align-left me-3 social-media-icon"></i>Contact Form</a></p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <div class="text-center p-4 copyright-container mt-4">
             <div class="row">

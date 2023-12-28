@@ -73,7 +73,7 @@ def handlePost(request):
         "SirJamesLocks email from website " + name,
         message,
         email,
-        [settings.EMAIL_HOST_USER,],
+        ["sirjames-locks@hotmail.com"],
         html_message=email_body,
         fail_silently=False
     )
