@@ -1,5 +1,5 @@
 .contact-header {
-    font-family: "Montserrat";
+    font-family: "Montserrat-bold";
     font-weight: 700;
     color: white;
 }
@@ -50,7 +50,7 @@
 }
 
 .bulletpoint-desc {
-    font-family: "Montserrat";
+    font-family: "Montserrat-bold";
     font-size: 18px;
     font-weight: 700;
 }

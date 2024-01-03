@@ -24,12 +24,12 @@
 }
 
 .carousel-header-name {
-  font-family: "Montserrat";
+  font-family: "Montserrat-bold";
   font-weight: 700;
 }
 
 .carousel-header-desc {
-  font-family: "Montserrat";
+  font-family: "Montserrat-medium";
   font-weight: 500;
 }
 
@@ -41,7 +41,6 @@
     width: 100%;
     font-family: "Roboto";
     font-weight: 100;
-    /* background-color: red; */
     z-index: 2;
 }
 
@@ -53,7 +52,6 @@
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 200;
-    font-weight: lighter;
     line-height: 20px;
 }
 
@@ -87,7 +85,7 @@
 }
 
 .carousel-bullet-points {
-  font-family: "Montserrat";
+  font-family: "Montserrat-medium";
   font-size: 18px;
   font-weight: 500;
 }
@@ -106,7 +104,7 @@
 } */
 
 .index-contact-header {
-  font-family: "Montserrat";
+  font-family: "Montserrat-bold";
   font-weight: 700;
   color: white;
 }
