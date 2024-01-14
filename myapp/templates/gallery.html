@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %} Gallery {% endblock %}
+{% load static %}
+
+{% block content %}
+
+<h1 class="display-2 text-center mt-3" data-aos="fade-up">Explore my gallery!</h1>
+<h1>  </h1>
+
+<div class="container my-4" >
+    <div class="row">
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery1.jpg' %}" alt="Sir James Locks picture 1" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="200">
+        </div>
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery2.jpg' %}" alt="Sir James Locks picture 2" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="300">
+        </div>
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery3.jpg' %}" alt="Sir James Locks picture 3" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="400">
+        </div>
+
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery4.jpg' %}" alt="Sir James Locks picture 4" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="200">
+        </div>
+
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery5.jpg' %}" alt="Sir James Locks picture 5" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="300">
+        </div>
+
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery7.jpg' %}" alt="Sir James Locks picture 6" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="400">
+        </div>
+
+        <div class="col-md-4 p-5">
+            <img src="{% static 'imgs/gallery8.jpg' %}" alt="Sir James Locks picture 7" class="img-fluid shadow" data-aos="fade-up" data-aos-duration="200">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
