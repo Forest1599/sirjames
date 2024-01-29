@@ -23,5 +23,6 @@ urlpatterns = [
     path("gallery/", views.gallery, name="gallery"),
     path("", views.home, name="home"),
     path("contact/", views.contact, name="contact"),
+    path("googled73acfe8d27fa133.txt/", views.google, name="google")
     
 ]

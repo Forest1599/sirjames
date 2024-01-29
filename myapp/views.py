@@ -58,6 +58,10 @@ def gallery(request):
     return render(request, "gallery.html")
 
 
+def google(request):
+    return render(request, "googled73acfe8d27fa133.html")
+
+
 def handlePost(request):
     if request.method == "POST":
         message = request.POST['message']
